@@ -1,4 +1,7 @@
 quality-day-training-tasks
 ==========================
 
-Various tasks and problems to solve
+Make the tests pass. You can modify only files in `app` directory.
+
+
+`npm test`
