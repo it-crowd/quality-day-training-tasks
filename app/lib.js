@@ -12,6 +12,12 @@
             engines.push(new RuleEngine(rule, operators))
         }
 
+        for (var key in operators) {
+            if (operators.hasOwnProperty(key)) {
+                operators[key] = operators[key].bind(null, context);
+            }
+        }
+
         return {
             run: function ()
             {
